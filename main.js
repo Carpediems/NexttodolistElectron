@@ -43,5 +43,8 @@ app.on('ready',()=>{
     ipc.on('window-close',()=>{
         minWindow.close()
     })
+    ipc.on('window-move',(pos)=>{
+        minWindow.setPosition(pos.windowX,pos.windowY)
+    })
 })
 

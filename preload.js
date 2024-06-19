@@ -9,6 +9,9 @@ contextBridge.exposeInMainWorld('electron', {
     },
     CloseWindow:()=>{
         ipcRenderer.send("window-close")
+    },
+    MoveWindow:(windowX,windowY)=>{
+        ipcRenderer.send("window-move",{windowX:windowX,windowY:windowY});
     }
 
 });

@@ -26,7 +26,14 @@ main{
       width: 100%;
       background: #F8FAFF;
       overflow: hidden;
+      .taber_title{
+        width: calc(100% - 150px);
+        height: 35px;
+        float: left;
+        -webkit-app-region:drag;
+      }
       .button_taber_right{
+        width: 150px;
         float: right;
         .button_taber_menu{
           width: 50px;
@@ -34,6 +41,7 @@ main{
           border-radius: 0;
           border-color:#F8FAFF;
           background-color: #F8FAFF;
+          cursor:pointer
         }
         .ant-btn {
           border: none;
