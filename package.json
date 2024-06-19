@@ -2,25 +2,37 @@
   "name": "reacttodolist",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
   "scripts": {
-    "dev": "next dev",
+    "dev": "electron . | next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@zeit/next-css": "^1.0.1",
+    "antd": "^5.18.1",
+    "electron": "^31.0.1",
+    "next": "14.2.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.4"
+    "sass": "^1.77.5"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "electron-reloader": "^1.2.3",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.4",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "typescript": "^5"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
