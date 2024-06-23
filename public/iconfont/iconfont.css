@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4588666 */
-  src: url('iconfont.woff2?t=1718989425530') format('woff2'),
-       url('iconfont.woff?t=1718989425530') format('woff'),
-       url('iconfont.ttf?t=1718989425530') format('truetype');
+  src: url('iconfont.woff2?t=1719144702013') format('woff2'),
+       url('iconfont.woff?t=1719144702013') format('woff'),
+       url('iconfont.ttf?t=1719144702013') format('truetype');
 }
 
 .iconfont {
@@ -13,8 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shoujixiangxiangziwenjianxianghe:before {
-  content: "\e63c";
+.icon-a-44tubiao-206:before {
+  content: "\e6a3";
+}
+
+.icon-shizhongfill:before {
+  content: "\e74e";
+}
+
+.icon-quadrant:before {
+  content: "\e767";
+}
+
+.icon-renwu:before {
+  content: "\e878";
 }
 
 .icon-lajitong:before {
@@ -51,18 +63,6 @@
 
 .icon-iconhunhexing3232luomashuzi4-copy:before {
   content: "\e7b1";
-}
-
-.icon-ai253:before {
-  content: "\e6f1";
-}
-
-.icon-renwu:before {
-  content: "\e66d";
-}
-
-.icon-sixiangxiankanban:before {
-  content: "\e670";
 }
 
 .icon-kuoda-copy:before {

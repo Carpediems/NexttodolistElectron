@@ -2,6 +2,7 @@
 import { Button,ConfigProvider } from 'antd'
 import React from 'react';
 import  { createFromIconfontCN } from '@ant-design/icons';
+import Link from "next/link";
 // import {useRouter} from "next/navigation";
 const MyIcon = createFromIconfontCN({
     scriptUrl: 'iconfont/iconfont.js', // 在 iconfont.cn 上生成
@@ -35,36 +36,23 @@ export default function Home() {
     // }
 
     return (
-        <main>
-            <nav>
-                <ul>
-                    <ConfigProvider wave={{disabled: true}}>
+        <main className="App">
+            {/*<section>*/}
+            {/*    <div className="button_taber">*/}
+            {/*        <div className="taber_title"></div>*/}
+            {/*        <div className="button_taber_right">*/}
+            {/*            <ConfigProvider wave={{disabled: true}}>*/}
+            {/*                <Button icon={<MyIcon type="icon-suoxiao"/>} className="button_taber_menu"*/}
+            {/*                        onClick={ZoomOut}></Button>*/}
+            {/*                <Button icon={<MyIcon type="icon-kuoda-copy"/>} className="button_taber_menu"*/}
+            {/*                        onClick={Maximize}></Button>*/}
+            {/*                <Button icon={<MyIcon type="icon-htmal5icon21"/>} className="button_taber_menu"*/}
+            {/*                        onClick={CloseWindow}></Button>*/}
+            {/*            </ConfigProvider>*/}
 
-                        <li><Button icon={<MyIcon type="icon-shoujixiangxiangziwenjianxianghe"/>}></Button></li>
-                        <li><Button icon={<MyIcon type="icon-ai253"/>}></Button></li>
-                        <li><Button icon={<MyIcon type="icon-sixiangxiankanban"/>}></Button></li>
-                        <li><Button icon={<MyIcon type="icon-lajitong"/>}></Button></li>
-
-                    </ConfigProvider>
-
-                </ul>
-            </nav>
-            <section>
-                <div className="button_taber">
-                    <div className="taber_title"></div>
-                    <div className="button_taber_right">
-                        <ConfigProvider wave={{disabled: true}}>
-                            <Button icon={<MyIcon type="icon-suoxiao"/>} className="button_taber_menu"
-                                    onClick={ZoomOut}></Button>
-                            <Button icon={<MyIcon type="icon-kuoda-copy"/>} className="button_taber_menu"
-                                    onClick={Maximize}></Button>
-                            <Button icon={<MyIcon type="icon-htmal5icon21"/>} className="button_taber_menu"
-                                    onClick={CloseWindow}></Button>
-                        </ConfigProvider>
-
-                    </div>
-                </div>
-            </section>
+            {/*        </div>*/}
+            {/*    </div>*/}
+            {/*</section>*/}
         </main>
 
 

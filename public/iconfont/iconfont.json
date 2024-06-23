@@ -6,11 +6,32 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "19183643",
-      "name": "收集箱,箱子,文件箱,盒",
-      "font_class": "shoujixiangxiangziwenjianxianghe",
-      "unicode": "e63c",
-      "unicode_decimal": 58940
+      "icon_id": "38661842",
+      "name": "垃圾桶",
+      "font_class": "a-44tubiao-206",
+      "unicode": "e6a3",
+      "unicode_decimal": 59043
+    },
+    {
+      "icon_id": "577361",
+      "name": "时钟-fill",
+      "font_class": "shizhongfill",
+      "unicode": "e74e",
+      "unicode_decimal": 59214
+    },
+    {
+      "icon_id": "21130015",
+      "name": "四象限",
+      "font_class": "quadrant",
+      "unicode": "e767",
+      "unicode_decimal": 59239
+    },
+    {
+      "icon_id": "34220326",
+      "name": "任务",
+      "font_class": "renwu",
+      "unicode": "e878",
+      "unicode_decimal": 59512
     },
     {
       "icon_id": "2325916",
@@ -74,27 +95,6 @@
       "font_class": "iconhunhexing3232luomashuzi4-copy",
       "unicode": "e7b1",
       "unicode_decimal": 59313
-    },
-    {
-      "icon_id": "999261",
-      "name": "闹钟",
-      "font_class": "ai253",
-      "unicode": "e6f1",
-      "unicode_decimal": 59121
-    },
-    {
-      "icon_id": "16384706",
-      "name": "任务",
-      "font_class": "renwu",
-      "unicode": "e66d",
-      "unicode_decimal": 58989
-    },
-    {
-      "icon_id": "26316384",
-      "name": "四象限看板",
-      "font_class": "sixiangxiankanban",
-      "unicode": "e670",
-      "unicode_decimal": 58992
     },
     {
       "icon_id": "40766421",
