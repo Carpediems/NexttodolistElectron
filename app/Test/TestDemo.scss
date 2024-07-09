@@ -1,0 +1,22 @@
+main{
+  background: white;
+}
+
+p{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  .MyIcon_btn{
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .MyIcon_span{
+    width: calc(100% - 21px);
+    height: 40px;
+    display: inline-block;
+    text-indent: 5px;
+    border:1px solid brown;
+  }
+}

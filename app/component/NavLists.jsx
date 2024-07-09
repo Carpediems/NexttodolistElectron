@@ -16,7 +16,8 @@ export default function NavLists(){
 
                     <li><Link href={"/Alltasks"}><Button icon={<MyIcon type="icon-renwu"/>}></Button></Link></li>
                     <li><Button icon={<MyIcon type="icon-shizhongfill"/>}></Button></li>
-                    <li><Button icon={<MyIcon type="icon-quadrant"/>}></Button></li>
+                    <li><Link href={"/FourQuadrants"}><Button icon={<MyIcon type="icon-quadrant"/>}></Button></Link></li>
+                    <li><Link href={"/Test"}>测试</Link></li>
 
                 </ConfigProvider>
 

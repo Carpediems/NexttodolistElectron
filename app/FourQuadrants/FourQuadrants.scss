@@ -1,0 +1,30 @@
+.FourQuadrants{
+  width: calc(100% - 50px);
+  height: calc(100% - 35px);
+  background: #F8FAFF;
+  //background: #222222;
+  float: right;
+  padding: 0 10px 10px 10px;
+  box-sizing: border-box;
+  h3{
+    padding: 5px 0;
+    background: #F8FAFF;
+    text-indent: 8px;
+  }
+  .FourQuadrants_box_four{
+    width: 100%;
+    height: calc(100% - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div{
+      width: 49%;
+      height: 49%;
+      border-radius: 5px;
+      background: #FFFFFF;
+      padding:10px 0 0 10px ;
+      box-sizing: border-box;
+    }
+  }
+
+}
