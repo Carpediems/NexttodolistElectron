@@ -2,7 +2,6 @@
   width: calc(100% - 50px);
   height: calc(100% - 35px);
   background: #F8FAFF;
-  //background: #222222;
   float: right;
   padding: 0 10px 10px 10px;
   box-sizing: border-box;
@@ -17,13 +16,36 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    div{
+    .FourQuadrants_box{
       width: 49%;
       height: 49%;
       border-radius: 5px;
       background: #FFFFFF;
-      padding:10px 0 0 10px ;
+      padding:0 0 10px 10px ;
       box-sizing: border-box;
+      h5{
+        height: 25px;
+        line-height:25px;
+        padding:5px 0 5px 2px;
+      }
+    }
+    .content_taskList{
+      width: 100%;
+      height: calc(100% - 25px);
+      background: white;
+      overflow: auto;
+    }
+    .content_taskList::-webkit-scrollbar{
+      width: 5px;
+      height: 8px;
+    }
+    .content_taskList::-webkit-scrollbar-thumb{
+      border-radius: 10px;
+      background: #d4d6d9;
+    }
+    .content_taskList::-webkit-scrollbar-track-piece{
+      background-color: #fff;
+      border-radius: 10px;
     }
   }
 
