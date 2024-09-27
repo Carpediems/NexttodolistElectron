@@ -1,4 +1,5 @@
 .FourQuadrants{
+  //background-color: #55a532;
   width: calc(100% - 50px);
   height: calc(100% - 35px);
   background: #F8FAFF;
@@ -6,6 +7,7 @@
   padding: 0 10px 10px 10px;
   box-sizing: border-box;
   h3{
+    width: 100%;
     padding: 5px 0;
     background: #F8FAFF;
     text-indent: 8px;
@@ -13,11 +15,8 @@
   .FourQuadrants_box_four{
     width: 100%;
     height: calc(100% - 30px);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
     .FourQuadrants_box{
-      width: 49%;
+      width:49%;
       height: 49%;
       border-radius: 5px;
       background: #FFFFFF;
@@ -26,7 +25,6 @@
       h5{
         height: 30px;
         line-height: 30px;
-
       }
     }
     .content_taskList{

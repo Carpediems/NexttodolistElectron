@@ -1,7 +1,7 @@
 const electron = require('electron')
 const path = require("path");
 const app = electron.app
-require('electron-reloader')(module);
+// require('electron-reloader')(module);
 const BrowserWindow = electron.BrowserWindow
 const ipc = electron.ipcMain
 const Menu = electron.Menu
@@ -12,6 +12,8 @@ app.on('ready',()=>{
     minWindow = new BrowserWindow({
         width:1200,
         height:800,
+        minHeight:693,
+        minWidth:1020,
         title:"测试",
         backgroundColor: '#FFFFFF', // 设置背景颜色为红色
         titleBarStyle: 'hidden',
@@ -25,7 +27,9 @@ app.on('ready',()=>{
         // titleBarOverlay: true
     })
 
-    minWindow.loadURL('http://localhost:3000/')
+    minWindow.loadURL('http://localhost:3000')
+    // const invisPath = path.join(__dirname, './layout.tsx')
+    // minWindow.loadFile(invisPath)
     minWindow.webContents.openDevTools()
     minWindow.on('close',()=>{
         minWindow = null

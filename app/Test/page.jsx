@@ -1,17 +1,26 @@
 "use client"
-import {Button} from "antd";
 import {createFromIconfontCN} from "@ant-design/icons";
 import './TestDemo.scss'
-import TitleBarfour from "../FourQuadrants/components/TitleBarfour";
+
+import React from "react";
+import HabitsIcon from "../Habits/components/HabitsFormComponents/HabitsIcon";
+
 const MyIcon = createFromIconfontCN({
     scriptUrl: '//at.alicdn.com/t/c/font_4588666_j2qot69ija.js', // 在 iconfont.cn 上生成
 });
 
 export default function Page(){
+    const [modal1Open,setModal1Open] = React.useState(false);
+    const ButtonDistance = ()=>()=>{
+        setModal1Open(true)
+        // @ts-ignore
+
+    }
     return(
-        <main>
-            <p><MyIcon type="icon-weiwanchengrenwu" className="MyIcon_btn"></MyIcon><span className="MyIcon_span">测试</span></p>
-            <TitleBarfour></TitleBarfour>
+        <main style={{backgroundColor:"white"}}>
+            <HabitsIcon></HabitsIcon>
+            <div>测试</div>
+            <div>ceshi</div>
         </main>
 
     )

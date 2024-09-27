@@ -6,6 +6,48 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1071935",
+      "name": "step5",
+      "font_class": "step5-copy",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "1304951",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "18863160",
+      "name": "更多",
+      "font_class": "gengduo",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "397417",
+      "name": "icon-adds",
+      "font_class": "tianjia",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "3823605",
+      "name": "未完成任务",
+      "font_class": "weiwanchengrenwu",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "34970964",
+      "name": "完成任务",
+      "font_class": "wanchengrenwu",
+      "unicode": "e81b",
+      "unicode_decimal": 59419
+    },
+    {
       "icon_id": "38661842",
       "name": "垃圾桶",
       "font_class": "a-44tubiao-206",
