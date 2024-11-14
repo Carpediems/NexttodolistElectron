@@ -1,0 +1,71 @@
+.titleBarFour{
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  padding-right: 2px;
+  p {
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 0;
+    font-size: 14px;
+    color: red;
+    .iconfontC {
+      display: inline-block;
+      padding-right: 5px;
+      vertical-align: middle;
+    }
+  }
+  .TD_add {
+    height: 28px;
+    border-radius: 2px;
+  }
+}
+
+.wen-content {
+  .ant-modal-content {
+    padding:0;
+    width: 350px;
+    height: 350px;
+  }
+  .wen-data{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #666666;
+    padding:0 10px;
+    background-color: white;
+    .wen-data-picker{
+      padding: 0 5px;
+      color: #CCCCCC;
+      height: 25px;
+      line-height: 25px;
+      font-size: 12px;
+      border-radius: 2px;
+      .wen-data-picker-icon{
+        font-size: 20px;
+        margin-right: 5px;
+        vertical-align: -4px;
+      }
+    }
+    .wen-data-picker:hover{
+      cursor: pointer;
+      background-color: #CCCCCC;
+    }
+
+    //.ant-picker .ant-picker-input span.ant-picker-suffix,
+    //.ant-picker.ant-picker-range span.ant-picker-suffix {
+    //  margin-left: 1px;
+    //  margin-right: 10px;
+    //  order: -1;
+    //}
+  }
+  .wen-wencontent{
+    background-color: #55a532;
+    height: calc(350px - 40px);
+  }
+  .wen-add-content{
+    background-color: blue;
+
+  }
+
+}
