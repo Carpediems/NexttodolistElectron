@@ -8,7 +8,7 @@ export default function NavLists() {
     <nav>
       <ul>
         <ConfigProvider wave={{ disabled: true }}>
-          {HomeNavListData.map((item, index) => (
+          {HomeNavListData.map((item) => (
             <li key={item.HomeNavListIndex}>
               <Link href={item.HomeNavListPath}>
                 <Button icon={item.HomeNavListComponent}></Button>

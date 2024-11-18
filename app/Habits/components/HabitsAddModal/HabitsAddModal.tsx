@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "./HabitsAddModal.scss";
 import { ConfigProvider, Flex, Form, Modal } from "antd";
 import { HabitsAddModalForm } from "@/app/Habits/components/HabitsAddModal/HabitsAddModalData";
+import CancelAndOk from "@/app/component/CancelAndOk";
 
 export default function HabitsAddModal(props: any) {
   /**
@@ -65,16 +66,17 @@ export default function HabitsAddModal(props: any) {
           </Form>
         </ConfigProvider>
       </div>
+      <CancelAndOk></CancelAndOk>
 
-      <Flex className="Habits-Icon-footer" justify="flex-end" wrap gap="small">
-        <button
-          className="Habits-Icon-footer_determine"
-          onClick={() => isAddModelTrue()}
-        >
-          确定
-        </button>
-        <button className="Habits-Icon-footer_cancel">取消</button>
-      </Flex>
+      {/*<Flex className="Habits-Icon-footer" justify="flex-end" wrap gap="small">*/}
+      {/*  <button*/}
+      {/*    className="Habits-Icon-footer_determine"*/}
+      {/*    onClick={() => isAddModelTrue()}*/}
+      {/*  >*/}
+      {/*    确定*/}
+      {/*  </button>*/}
+      {/*  <button className="Habits-Icon-footer_cancel">取消</button>*/}
+      {/*</Flex>*/}
     </Modal>
   );
 }

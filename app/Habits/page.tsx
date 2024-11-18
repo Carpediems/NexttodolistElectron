@@ -1,3 +1,4 @@
+// 习惯
 "use client";
 import styled from "styled-components";
 import { Button, Flex } from "antd";
@@ -47,7 +48,6 @@ export default function HabitsPage() {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const Test = (data: boolean) => {
-    console.log(data);
     setIsModalVisible(data);
   };
 

@@ -1,3 +1,4 @@
+"use client";
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { Flex } from "antd";
 import styled from "styled-components";
@@ -31,7 +32,7 @@ const CancelAndOkBox = styled(Flex)`
 const CancelAndOk = ({ Width = "100px", Height = "28px" }) => {
   let { FrequencyOKValue, setFrequencyOKValue }: any = useContext(
     HabitsFormRateContext,
-  );
+  ) || { FrequencyOKValue: true };
 
   // 确定
   const FrequencyOK = () => {

@@ -1,14 +1,25 @@
+/**
+ * 弹窗频率数据源
+ */
+type HabitsFormRateDataType = {
+  value: string;
+  label: string;
+};
+
+export const HabitsFormRateData: HabitsFormRateDataType[] = [
+  { value: "byDay", label: "按天" },
+  { value: "byWeek", label: "按周" },
+  { value: "byTimeInterval", label: "按时间间隔" },
+];
+
+/**
+ * 习惯时间线数据源
+ */
 interface HabitsDateSourceType {
   HabitsDateId: number;
   HabitsDateWeek: number;
   HabitsDateOn: number;
 }
-
-interface HabitsFormRateDataType {
-  value: string;
-  label: string;
-}
-
 export const HabitsDateSource: HabitsDateSourceType[] = [
   {
     HabitsDateId: 1,
@@ -45,11 +56,4 @@ export const HabitsDateSource: HabitsDateSourceType[] = [
     HabitsDateWeek: new Date().getDay(),
     HabitsDateOn: new Date().getDate(),
   },
-];
-
-//
-export const HabitsFormRateData: HabitsFormRateDataType[] = [
-  { value: "byDay", label: "按天" },
-  { value: "byWeek", label: "按周" },
-  { value: "byTimeInterval", label: "按时间间隔" },
 ];

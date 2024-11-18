@@ -3,6 +3,7 @@
   color: inherit;
   padding: 0;
   border-radius: 0;
+  background-color: transparent;
 
 }
 .ant-btn:active,
@@ -39,20 +40,21 @@ main{
 nav{
   width: 50px;
   height: 100%;
-  background: #F1F4FF;
+  background-color: #F9F9F9;
   display: inline-block;
   padding-top: 40px;
   box-sizing: border-box;
   float: left;
+  border: 1.5px solid #ECECEC;
   ul{
     width: 50px;
     height: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
+
   }
   ul li{
-
     margin-bottom: 10px;
     list-style: none;
   }
@@ -60,7 +62,6 @@ nav{
 section{
   width: calc(100% - 50px);
   height: 35px;
-  //background: #F8FAFF;
   background: #55a532;
   display: inline-block;
   float: right;
@@ -73,6 +74,7 @@ section{
       height: 35px;
       float: left;
       -webkit-app-region:drag;
+
     }
     .button_taber_right{
       width: 160px;
