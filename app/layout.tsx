@@ -4,7 +4,8 @@ import "./globals.scss";
 import React from "react";
 import NavLists from "@/app/component/NavLists";
 import TaberController from "@/app/component/TaberController";
-
+import { Provider } from "react-redux";
+import { store } from "@/app/store";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -15,7 +16,7 @@ export default function RootLayout({
       <body>
         <NavLists></NavLists>
         <TaberController></TaberController>
-        {children}
+        <Provider store={store}>{children}</Provider>
       </body>
     </html>
   );

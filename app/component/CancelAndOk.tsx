@@ -1,11 +1,9 @@
 "use client";
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Flex } from "antd";
 import styled from "styled-components";
-import HabitsFormRateSelect, {
-  HabitsFormRateContext,
-} from "@/app/Habits/components/HabitsAddModal/HabitsFormRate/HabitsFormRate";
-
+import { useDispatch, useSelector } from "react-redux";
+import { store } from "@/app/store";
 const CancelAndOkBox = styled(Flex)`
   width: 100%;
   height: 70px;
@@ -30,17 +28,18 @@ const CancelAndOkBox = styled(Flex)`
 `;
 
 const CancelAndOk = ({ Width = "100px", Height = "28px" }) => {
-  let { FrequencyOKValue, setFrequencyOKValue }: any = useContext(
-    HabitsFormRateContext,
-  ) || { FrequencyOKValue: true };
-
+  const CancelAndOkDispatch = useDispatch();
+  const openFrequency = useSelector(
+    (state: any) => state.HabitsAddModal.frequency,
+  );
   // 确定
   const FrequencyOK = () => {
-    setFrequencyOKValue(false);
+    CancelAndOkDispatch({ type: "frequencyChangeFalse" });
   };
+
   // 取消
   const FrequencyCancel = () => {
-    setFrequencyOKValue(false);
+    CancelAndOkDispatch({ type: "frequencyChangeFalse" });
   };
   return (
     <CancelAndOkBox

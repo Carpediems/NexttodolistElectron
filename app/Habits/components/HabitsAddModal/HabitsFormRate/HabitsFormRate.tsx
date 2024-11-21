@@ -12,6 +12,7 @@ import {
 } from "@/app/Habits/components/HabitsAddModal/HabitsFormRate/component/HabitsFormRateComponent";
 import { HabitsFormRateData } from "@/app/Habits/HabitsDateSource";
 import CancelAndOk from "@/app/component/CancelAndOk";
+import { useDispatch, useSelector } from "react-redux";
 
 const HabitsFormRateBox = styled.div`
   width: 250px;
@@ -61,30 +62,28 @@ function HabitsFormRate(props: object) {
   );
 }
 
-export const HabitsFormRateContext = createContext(null);
-
 const HabitsFormRateSelect = () => {
-  const [FrequencyOKValue, setFrequencyOKValue] = useState<boolean>(false);
-
+  /**
+   * title：展开下拉菜单的回调
+   * 用于控制选择具体频率后改变相应面板
+   */
+  const dispatch = useDispatch();
+  const openFrequency = useSelector(
+    (state: any) => state.HabitsAddModal.frequency,
+  );
   const HabitsFormRateSelectChange = () => {
-    setFrequencyOKValue(true);
+    dispatch({ type: "frequencyChangeTrue" });
   };
-
   return (
-    <HabitsFormRateContext.Provider
-      // @ts-ignore
-      value={{ FrequencyOKValue, setFrequencyOKValue }}
-    >
-      <Select
-        open={FrequencyOKValue}
-        defaultValue="每天"
-        dropdownStyle={{ width: "250px" }}
-        onDropdownVisibleChange={HabitsFormRateSelectChange}
-        dropdownRender={() => {
-          return <HabitsFormRate></HabitsFormRate>;
-        }}
-      />
-    </HabitsFormRateContext.Provider>
+    <Select
+      open={openFrequency}
+      defaultValue="每天"
+      dropdownStyle={{ width: "250px" }}
+      onDropdownVisibleChange={HabitsFormRateSelectChange}
+      dropdownRender={() => {
+        return <HabitsFormRate></HabitsFormRate>;
+      }}
+    />
   );
 };
 

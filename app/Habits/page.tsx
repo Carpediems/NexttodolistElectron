@@ -11,14 +11,14 @@ import { HabitsDateSource } from "@/app/Habits/HabitsDateSource";
 const HabitsBox = styled.main`
   width: calc(100% - 50px);
   height: calc(100% - 35px);
+  background-color: white;
   .Habits-Left-box {
     width: 63%;
     height: 100%;
-    background-color: #fafafa;
+    border-right: 1.5px solid rgb(236, 236, 236);
     .Habits-Timeline {
       width: 100%;
       height: 30px;
-      background-color: #fafafa;
       .Habits-Timeline-Text {
         width: 50px;
         height: 30px;
@@ -28,7 +28,6 @@ const HabitsBox = styled.main`
         height: 30px;
         .ant-btn {
           height: 30px;
-          background-color: #fafafa;
         }
         .ant-btn:hover {
           background-color: #ececec;
@@ -37,7 +36,6 @@ const HabitsBox = styled.main`
       .Habits-Timeline-Date {
         width: 100%;
         height: 100px;
-        background-color: #fafafa;
         padding: 10px 15px;
       }
     }
@@ -46,11 +44,9 @@ const HabitsBox = styled.main`
 
 export default function HabitsPage() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-
   const Test = (data: boolean) => {
     setIsModalVisible(data);
   };
-
   return (
     <HabitsBox>
       <div className="Habits-Left-box">

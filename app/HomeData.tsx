@@ -34,16 +34,16 @@ export const HomeWindowsData = [
   {
     HomeWindowsIndex: 1,
     HomeWindowsComponent: <MyIcon type="icon-suoxiao"></MyIcon>,
-    HomeWindowClickEvent: () => window.electron.minimizeWindows(),
+    HomeWindowClickEvent: async () => window.electron.minimizeWindows(),
   },
   {
     HomeWindowsIndex: 2,
     HomeWindowsComponent: <MyIcon type="icon-kuoda-copy"></MyIcon>,
-    HomeWindowClickEvent: () => window.electron.MaximizeWindows(),
+    HomeWindowClickEvent: async () => window.electron.MaximizeWindows(),
   },
   {
     HomeWindowsIndex: 3,
     HomeWindowsComponent: <MyIcon type="icon-htmal5icon21"></MyIcon>,
-    HomeWindowClickEvent: () => window.electron.CloseWindow(),
+    HomeWindowClickEvent: async () => window.electron.CloseWindow(),
   },
 ];

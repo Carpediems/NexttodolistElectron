@@ -22,6 +22,9 @@ button[ant-click-animating-without-extra-node]:after {
   opacity: 0;
   //animation:none 0 ease 0 1 normal;
 }
+body{
+  border-radius: 30px;
+}
 body,html,nav,section,main,div,ul,li,h5,h3,p{
   margin: 0;
   padding: 0;
@@ -40,7 +43,7 @@ main{
 nav{
   width: 50px;
   height: 100%;
-  background-color: #F9F9F9;
+  background-color: white;
   display: inline-block;
   padding-top: 40px;
   box-sizing: border-box;
@@ -62,12 +65,12 @@ nav{
 section{
   width: calc(100% - 50px);
   height: 35px;
-  background: #55a532;
+
   display: inline-block;
   float: right;
   .button_taber{
     width: 100%;
-    background: #F8FAFF;
+    background: white;
     overflow: hidden;
     .taber_title{
       width: calc(100% - 160px);

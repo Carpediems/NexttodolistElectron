@@ -6,13 +6,10 @@ import { MyIcon } from "@/app/component/MyIcon";
 const HabitsDateBox = styled.div`
   width: 60px;
   height: 80px;
-  background-color: #fafafa;
-  border-radius: 100px;
   .Habits-Date {
     width: 100%;
     height: 100%;
     padding: 5px 0;
-    background-color: #fafafa;
     p {
       width: 100%;
       height: 15px;

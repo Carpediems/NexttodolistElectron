@@ -6,7 +6,7 @@ const BrowserWindow = electron.BrowserWindow;
 const ipc = electron.ipcMain;
 const Menu = electron.Menu;
 
-var minWindow = null;
+let minWindow = null;
 app.on("ready", () => {
   Menu.setApplicationMenu(null);
   minWindow = new BrowserWindow({
@@ -15,8 +15,10 @@ app.on("ready", () => {
     minHeight: 693,
     minWidth: 1020,
     title: "测试",
-    backgroundColor: "#FFFFFF", // 设置背景颜色为红色
+    // backgroundColor: "#FFFFFF", // 设置背景颜色为红色
     titleBarStyle: "hidden",
+    transparent: true,
+    backgroundColor: "#00000000",
 
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
